@@ -1,0 +1,37 @@
+Алгоритм движения змеи:
+1 сдвинуть координаты головы в соответсвии с направлением движения
+2 на экран пустить координаты головы:
+	1 x = head x
+	2 y = head y
+	3 value = 1
+	4 stop = 0
+3 stop = 1
+
+4 на экран пустить координаты хвоста:
+	1 x = tail x
+	2 y = tail y
+	3 value = 0
+	4 stop = 0
+5 stop = 1
+6 сдвинуть координаты хвоста в соответсвии с направлением движения
+
+Адреса регистров логисим:
+
+Output: 
+	0xf0 - value
+	0xf1 - stop
+	0xf2 - head x
+	0xf3 - head y
+	0xf4 - tail x
+	0xf5 - tail y
+
+	0xff - update screen
+	
+Input:
+	0xf6 - head x
+	0xf7 - head y
+	0xf8 - tail x
+	0xf9 - tail y
+	0xfa - apple x
+	0xfb - apple y
+	0xfc - direction
