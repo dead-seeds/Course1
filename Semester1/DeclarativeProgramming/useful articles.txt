@@ -1,0 +1,5 @@
+Функторы, аппликативные функторы и монады в картинках:
+https://habr.com/ru/articles/183150/
+
+Монады Reader, Writer, State:
+https://habr.com/ru/articles/184722/
